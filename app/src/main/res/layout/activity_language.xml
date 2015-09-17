@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="@drawable/lang_bg1"
+      >
+    <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="@dimen/margin_normal"-->
+        <!--android:background="@drawable/main1"-->
+        <!--android:scaleType="fitXY" />-->
+    <Button android:layout_width="220dp"
+
+        android:layout_height="40dp"
+        android:id="@+id/spinner_countries"
+
+        android:layout_centerInParent="true"
+
+        android:paddingLeft="@dimen/margin_large"
+        android:textSize="16sp"
+        android:background="@android:drawable/btn_dropdown"
+        android:textColorHint="@android:color/black"
+        android:gravity="left|center_vertical"
+        >
+
+     </Button>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/progress1"
+        android:layout_centerInParent="true"
+        android:id="@+id/progressBar"
+        />
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

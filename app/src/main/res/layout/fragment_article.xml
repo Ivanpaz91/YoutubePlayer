@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nonVideoLayout"
+        android:weightSum="1">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+          >
+            <!--android:background="@drawable/rounded_corner_shadow"-->
+            <com.tirdis.watchorread.view.VideoEnabledWebView
+                android:id="@+id/webView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+            />
+            <ProgressBar
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/progressBar_video"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:paddingRight="@dimen/margin_large"
+            android:paddingLeft="@dimen/margin_large"
+            android:paddingTop="@dimen/margin_small"
+            android:background="@android:color/white"
+            >
+            <View
+                android:id="@+id/view_line"
+                android:layout_width="3dp"
+                android:layout_height="@dimen/height_line"
+                android:layout_marginTop="@dimen/margin_large"
+                android:background="@android:color/holo_red_light" />
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/txt_title_article"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="WOW GREAT ARTICLE"
+                android:textSize="@dimen/font_size_title_action_bar"
+                android:textColor="@android:color/black"
+                android:layout_marginRight="@dimen/space_small"
+                android:layout_marginLeft="@dimen/margin_normal"
+
+                android:layout_marginTop="@dimen/margin_normal"
+                android:gravity="left|center_vertical"
+                android:singleLine="false"
+                android:maxLines = "2"
+                android:minLines = "2"
+                android:drawableLeft="@drawable/line"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@id/txt_title_article"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:layout_marginBottom="@dimen/space_small">
+
+                <com.tirdis.watchorread.view.OpenSansTextView
+                    android:id="@+id/txt_content_article"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/txt_example_article_content"
+                    android:textSize="@dimen/font_size_large"
+                    android:textColor="@android:color/black">
+
+                    </com.tirdis.watchorread.view.OpenSansTextView>
+            </ScrollView>
+            <ImageView
+                android:layout_width="@dimen/space_smallest"
+                android:layout_height="@dimen/space_smallest_1"
+                android:background="@drawable/share"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/margin_small"
+                android:clickable="true"
+
+                android:id="@+id/btn_share_content"
+                />
+
+            <com.tirdis.watchorread.view.OpenSansTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:text="2/2"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/font_size_article_text"
+                android:id="@+id/txt_index_article"/>
+        </RelativeLayout>
+     </LinearLayout>
+    <!-- View where the video will be shown when video goes fullscreen -->
+    <RelativeLayout
+        android:id="@+id/videoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- View that will be shown while the fullscreen video loads. For example you could include
+        a "Loading..." message. However, in this particular example this view is actually defined in
+        view_loading_video.xml and inflated programmatically in ExampleActivity.java. The reason for
+        this is to keep the main layout (this file) cleaner. -->
+        <!-- <View
+            android:id="@+id/videoLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" /> -->
+
+    </RelativeLayout>
+</RelativeLayout>

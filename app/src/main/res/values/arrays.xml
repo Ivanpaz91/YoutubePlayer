@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="country_arrays">
+        <item>English</item>
+        <item>Kannada</item>
+        <item>Hindi</item>
+        <item>Telugu Samoa</item>
+        <item>Tamil</item>
+    </string-array>
+</resources>

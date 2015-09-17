@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.tirdis.watchorread.ArticleViewActivity">
+
+    <include layout="@layout/layout_header"/>
+
+
+    <com.tirdis.watchorread.view.CustomViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/height_action_bar"
+        android:layout_marginBottom="@dimen/height_action_bar"  />
+
+    <include layout="@layout/layout_footer" />
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/layout_section_header_category"
+    android:id = "@+id/layout_section_list_category"
+    android:orientation="horizontal"
+    android:background="@android:color/white"
+    android:weightSum="1"
+    android:paddingRight="@dimen/margin_small"
+    android:paddingLeft="@dimen/margin_small"
+    android:gravity="center_vertical"
+    android:paddingTop="@dimen/margin_small"
+    android:paddingBottom="@dimen/margin_small">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2">
+            <ImageView android:layout_width="@dimen/size_cateogry_icon_main"
+                android:layout_height="@dimen/size_cateogry_icon_main"
+                android:scaleType="fitXY"
+                android:layout_centerInParent="true"
+                android:id ="@+id/imageView_icon_category">
+            </ImageView>
+        </RelativeLayout>
+        <com.tirdis.watchorread.view.OpenSansTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_categort_name"
+            android:text="@string/category_name"
+            android:textColor="@android:color/black"
+            android:layout_weight="0.35"
+            android:paddingLeft="@dimen/margin_small"
+            android:id="@+id/textView_name_category"
+            />
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"></RelativeLayout>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton_default_category"
+            />
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25">
+            <com.kyleduo.switchbutton.SwitchButton
+                android:id="@+id/switch_play_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:focusable="false" />
+        </RelativeLayout>
+
+    </LinearLayout>

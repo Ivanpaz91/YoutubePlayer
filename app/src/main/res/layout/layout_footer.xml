@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="@dimen/height_action_bar"
+    android:layout_centerVertical="true"
+    android:background="@android:color/white"
+    android:layout_alignParentBottom="true"
+    android:id="@+id/view_footer">
+
+        <ImageView
+            android:id="@+id/btn_home"
+            android:layout_width ="@dimen/space_small"
+            android:layout_height="@dimen/space_small"
+            android:adjustViewBounds= "true"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_centerVertical="true"
+            android:src="@drawable/home"
+            android:onClick="onHomeBtnClick"
+            android:clickable="true"
+            />
+        <!--<com.tirdis.watchorread.view.OpenSansTextView-->
+             <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+             <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+             <!--android:layout_width="wrap_content"-->
+             <!--android:layout_height="wrap_content"-->
+             <!--android:paddingBottom="@dimen/margin_small"-->
+             <!--android:text="Next Video? Swipe Left/Right"-->
+             <!--android:textSize="@dimen/font_size_normal"-->
+             <!--android:textColor="@android:color/black"-->
+             <!--android:layout_centerInParent="true"/>-->
+        <ImageView
+            android:id="@+id/btn_calendar"
+            android:layout_width="@dimen/space_normal_1"
+            android:layout_height="@dimen/space_normal_1"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds= "true"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:clickable="true"
+            android:src="@drawable/calendar"/>
+
+</RelativeLayout>

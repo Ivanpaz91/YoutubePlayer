@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.tirdis.watchorread.MenuActivity"
+    android:background="@drawable/bg">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_normal"
+        android:id="@+id/layout_section_header_category" >
+        <com.tirdis.watchorread.view.OpenSansTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_large"
+            android:text="@string/category_back"
+            android:textColor="@android:color/holo_red_dark"
+            android:clickable="true"
+            android:onClick="onBackBtnClick"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_small"
+            />
+        <ImageView
+            android:layout_width="@dimen/size_help_icon"
+            android:layout_height="@dimen/size_help_icon"
+            android:textSize="@dimen/font_size_large"
+            android:layout_alignParentRight="true"
+            android:textColor="@android:color/holo_red_dark"
+            android:clickable="true"
+            android:onClick="onSettingBtnClick"
+            android:background="@drawable/setting"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_smallest"
+            />
+        <com.tirdis.watchorread.view.OpenSansTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_title_action_bar"
+            android:text="@string/menu"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gridView_menu"
+        android:numColumns="auto_fit"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:paddingTop="@dimen/margin_large"
+        android:columnWidth="@dimen/space_large"
+        android:gravity="center_horizontal"
+        android:background="@android:color/white"
+        android:layout_marginTop="@dimen/space_normal"/>
+
+
+
+</RelativeLayout>

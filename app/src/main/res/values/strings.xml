@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">WatchOrRead</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_article_view">ArticleViewActivity</string>
+    <string name="txt_example_article_content">CHENNAI: a sensational bowling effort</string>
+    <string name="title_activity_category">CategoryActivity</string>
+    <string name="category_back">BACK</string>
+    <string name="category_done">Done</string>
+    <string name="category">CATEGORY</string>
+    <string name="category_name">Name</string>
+    <string name="category_default">Default</string>
+    <string name="category_play">Play</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="error_player">Error Loading!</string>
+    <string name="title_activity_pick_date">PickDateActivity</string>
+    <string name="inf_article_empty">has no Videos\n        Pick a different Date</string>
+    <string name="info_swipe_string">Next Video? Swipe Left/Right</string>
+    <string name="archives">ARCHIVES</string>
+    <string name="category_pick">PICK</string>
+    <string name="setting">SETTINGS</string>
+    <string name="category_save">SAVE</string>
+    <string name="category_interest">Interest</string>
+    <string name="title_activity_help">HelpActivity</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="menu">MENU</string>
+
+</resources>

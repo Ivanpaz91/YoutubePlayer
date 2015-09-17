@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="shadow">#555555</color>
+    <color name="color_header_category">#cfffffff</color>
+
+
+    <color name="green">#8FCC85</color>
+    <color name="blue">#ff33b5e5</color>
+    <color name="red">#d63232</color>
+    <color name="dialog_language">#ff1f467b</color>
+
+</resources>

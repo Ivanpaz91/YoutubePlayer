@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="NoActionBarSplashTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowTitleSize">0dp </item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+    <style name="spinner_style">
+        <item name="android:background">@drawable/gradient_spinner</item>
+
+        <item name="android:divider">#ff0000</item>
+        <item name="android:dividerHeight">5dp</item>
+        <item name="android:textColor">@android:color/holo_red_dark</item>
+    </style>
+
+    <style name="spinnerItemStyle" parent="android:Widget.TextView.SpinnerItem">
+
+    </style>
+
+    <style name="spinnerDropDownItemStyle" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+
+    </style>
+</resources>
